@@ -21,7 +21,7 @@ const Cards = () => {
     return <div className='loading'><CircularProgress /></div>
   }
   if(error){
-    return <p className='loading'>Error: {error.message}</p>
+    return <p className='loading'>Error: {error.response.data.message}</p>
   } 
   if(!Array.isArray(data)){
     return <p className='loading'>No Projects Found</p>;
