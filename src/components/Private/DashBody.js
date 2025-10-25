@@ -19,10 +19,55 @@ const DashBody = () => {
     }
   })
   if(isPending){
-    return <p>Loading...</p>
+    return <p className='loading'>Loading...</p>
   }
   if(error){
-    return <p>Error: {error.message}</p>
+    return (
+      <div className='dash-card-container'>
+        <p>Error: {error.response.data.message}</p>
+        <div className='cards'>
+          <Card
+            sx={{
+              width: 400,
+              minHeight: 300,
+              backgroundColor: 'rgba(255, 255, 255, 0.03)',
+              borderRadius: 3,
+              boxShadow: 'none',
+              border: '2px dashed rgba(255, 255, 255, 0.1)',
+              borderColor: 'rgba(255,255,255,0.3)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexDirection: 'column',
+              color: '#fff',
+              cursor: 'pointer',
+              '&:hover': {
+                  transform: 'scale(1.04)',
+                  borderColor: 'rgba(255,255,255,0.3)',
+                  boxShadow: '0 0 15px rgba(255,255,255,0.05)',
+                  background: 'rgba(255,255,255,0.05)',
+              },
+              transition: 'all 0.3s ease'
+            }}
+          >
+            <CardActionArea LinkComponent={Link} to={'/dash/create'} sx={{
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignContent: 'center',
+              justifyItems: 'center',
+
+            }}>
+              <AddCircleOutlineIcon sx={{fontSize: 60, mb: 1}} />
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                Create New Project
+              </Typography>
+            </CardActionArea>
+          </Card>
+          
+        </div>
+      </div>
+    );
   }
   if(!Array.isArray(data)){
     return (
