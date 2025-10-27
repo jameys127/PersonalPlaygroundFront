@@ -8,7 +8,7 @@
     color: #fff;
     max-width: 1400px;
     margin: 0 auto; 
-    line-height: 1.8;
+    line-height: 1.4;
 }
 
 .about-body h1{
@@ -22,7 +22,7 @@
 }
 
 .about-me-paragraphs{
-    font-size: 21px;
+    font-size: 1.3rem;
     font-weight: 400;
     background: rgba(255, 255, 255, 0.03);
     padding: 2rem;
@@ -41,4 +41,35 @@
 .about-me-paragraphs a:hover {
     border-bottom: 1px solid #b66cff;
     color: #d8a7ff;
+}
+
+@media (max-width: 1024px){
+    .about-body{
+        padding: 1.3rem 1.3rem;
+        line-height: 1.4;
+    }
+    .about-body h1{
+        text-align: center;
+        font-size: 2.3rem;
+        margin-bottom: 1.4rem;
+    }
+    .about-me-paragraphs{
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .about-body{
+        padding: 1rem 1rem;
+        line-height: 1.2;
+    }
+    .about-body h1{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .about-me-paragraphs{
+        font-size: 1.05rem;
+        padding: 1.2rem;
+    }
 }

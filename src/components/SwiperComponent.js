@@ -12,12 +12,26 @@ const SwiperComponent = (prop) => {
     <>
       <div className='slider'>
       <Swiper
-        spaceBetween={50}
+        spaceBetween={20}
         modules={[Pagination, Navigation]}
         // pagination={{clickable: true}}
         navigation
         loop={true}
         slidesPerView={3}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }}
       >
         {prop.imgs.map((img) => (
           <SwiperSlide className='swiper-slide'><img src={img} alt='img' onClick={() => setExpandedImg(img)}/></SwiperSlide>

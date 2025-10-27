@@ -1,6 +1,6 @@
 {
-  "name": "front",
-  "version": "0.1.0",
+  "name": "jeremiah-sheehy-portfolio",
+  "version": "1.0.0",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",

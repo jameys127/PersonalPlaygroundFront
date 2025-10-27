@@ -1,3 +1,8 @@
+html, body {
+  background: linear-gradient(to right, #232526, #414345);
+  background-attachment: fixed;
+}
+
 *{
   box-sizing: border-box;
   margin: 0;

@@ -21,7 +21,8 @@ const CardItem = (prop) => {
 
   return (
     <Card sx={{
-        width: 400,
+        width: '100%',
+        maxWidth: 400,
         height: 'auto',
         backgroundColor: 'transparent',
         borderRadius: 3,

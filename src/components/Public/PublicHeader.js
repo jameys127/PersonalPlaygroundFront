@@ -13,7 +13,7 @@ const PublicHeader = () => {
     <nav className='navbar'>
       <div className='navbar-container'>
         <Link to='/' className='navbar-logo'>
-          PersonalPlayground <i className='fa-solid fa-code' />
+          Jeremiah<span className='last-name'>Sheehy</span> <i className='fa-solid fa-code' />
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

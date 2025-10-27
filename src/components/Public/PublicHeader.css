@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 999;
 }
@@ -31,10 +31,13 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+.last-name{
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 5px;
+}
 
 .fa-code{
-    margin-top: 0;
-    margin-left: 5px;
+  padding-left: 3px;
 }
 
 .nav-menu{

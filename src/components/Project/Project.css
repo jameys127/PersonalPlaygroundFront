@@ -14,6 +14,7 @@
 .project-intro {
   font-size: 2.5rem;
   margin: 0;
+  padding-bottom: 2px;
   /* margin-bottom: 1rem; */
   background: linear-gradient(90deg, #8a2be2, #da70d6);
   background-clip: text;
@@ -26,10 +27,23 @@
   font-weight: 500;
   font-size: 1.3rem;
   color: #d6d6d6;
-  margin-bottom: 2rem;
-  line-height: 1.5;
 }
 
 .card-grid{
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .project-intro{
+    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: 0;
+  }
+  .project-section h3{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
 }

@@ -58,7 +58,7 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 800px){
+@media (max-width: 1024px){
   .footer-container{
     grid-template-columns: 1fr;
     text-align: center;
